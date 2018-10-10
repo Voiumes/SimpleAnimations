@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background-color: rgb(130, 219, 219);
+}
+.circle{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+    margin: 100px 0 0 10%;
+}
+.circlePulse{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+    animation: pulse 1s infinite;
+}
+.square{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 100px 0 0 30%;
+    animation: rotate 3s linear infinite;
+}
+.bouncer{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 255, 157);
+    margin: 100px 0 0 50%;
+    animation:bounce 2s linear infinite;
+}
+@keyframes pulse {
+    0%{
+
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1.4);
+    }
+}
+@keyframes rotate{
+    0%{
+
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes bounce{
+    0%{
+        transform: translate(-50px, 0px);
+    }
+    25%{
+        transform: translate(0px, -50px);
+    }
+    50%{
+        transform: translate(50px, 0px);
+    }
+    75%{
+        transform: translate(0px, 50px);
+    }
+    100%{
+        transform: translate(-50px, 0px);
+    }
+
+}
